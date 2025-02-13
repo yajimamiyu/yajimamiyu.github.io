@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
+    <title>Document</title>
+    
+    </head>
+    <body>
+        <div class="contact-us">
+            <div class="form">
+                <div class="text">
+<h2>
+    今までやってきたことの紹介
+</h2>
+<p>
+    今年度私は約１ヶ月半、実習に行ってきました。<br>
+    そこで私が行ったことを抜粋して紹介します。<br>
+</p>
+<h2>
+    ハロウィンイベントの企画・運営
+</h2>
+<p>
+    毎年行っているというハロウィンのイベントの企画を担当さんから任され、
+    小学生から高校生までの生徒が楽しめるイベントの企画を考えました。
+    何個か条件がある中、
+    多くの人に楽しんでもらうイベントを考えるのはとても難しかったです。
+    もう一人の実習生と話し合い、<br>
+    私が考えた10秒チャレンジを行おうという事になりました。<br>
+    昔からこのようなイベントを考えたりするのは得意だったので<br>
+    役に立てて良かったです。<br>
+    しかし、実現することは苦手だったので
+    システムを作るのはとても時間がかかりました。<br>
+    なのでこれから作るのも得意と言えるように
+    多くのことを学びたいと思っています。
+</p>
+    <div class="social-icon">
+        <div class="home">
+            <a href="api-1.html">紹介</a>
+        </div>
+        <div class="research">
+            <a href="api-2.html">実習</a>
+        </div>
+    </div>
+        </div>
+        <script>
+            const backgroundImages = [
+                'iti.jpg',
+                'ni.jpg'
+                
+            ];
+            let currentIndex = 0;
+    
+            function changeBackground() {
+                document.body.style.backgroundImage = `url('${backgroundImages[currentIndex]}')`;
+                currentIndex = (currentIndex + 1) % backgroundImages.length;
+            }
+    
+            setInterval(changeBackground, 5000);
+            changeBackground(); 
+        </script>
+</body>
+</html>
