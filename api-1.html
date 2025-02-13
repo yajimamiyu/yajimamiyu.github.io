@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
+    <title>はじめに</title>
+
+</head>
+<body>
+    <div class="contact-us">
+        <div class="form">
+            <div class="text">
+
+<h2>    
+    簡単な自己紹介
+</h2>
+<p>
+    矢島美優<br>
+    誕生日１２月２０日<br>
+    趣味 ゲームをすること<br>
+    特にスプラトゥーンをするのが好き<br>
+    背景の画像は友達と遊んだ時の写真
+</p>
+<div class="social-icon">
+    <div class="home">
+        <a href="api-1.html">紹介</a>
+    </div>
+    <div class="research">
+        <a href="api-2.html">実習</a>
+    </div>
+</div>
+    </div>
+    <script>
+        const backgroundImages = [
+            'iti.jpg',
+            'ni.jpg'
+            
+        ];
+        let currentIndex = 0;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url('${backgroundImages[currentIndex]}')`;
+            currentIndex = (currentIndex + 1) % backgroundImages.length;
+        }
+
+        setInterval(changeBackground, 5000);
+        changeBackground(); 
+    </script>
+</body>
+</html>
