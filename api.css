@@ -1,0 +1,47 @@
+body{
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+}
+h1{
+    margin: 0;
+    font-size: 50px;
+}
+.contact-us{
+width: 300px;
+background: #f2fbf9;
+padding: 70px;
+margin: 50px auto;
+border-radius: 30px;
+position: relative;
+}
+.social-icon{
+position: absolute;
+top: -25px;
+left:270px;
+transform: translateX(-50%);
+width: 300px;
+display: flex;
+}
+.social-icon div{
+width: 100px;
+height: 80px;
+border-radius: 20%;
+position: relative;
+cursor: pointer;
+margin-right: 15px;
+}
+.social-icon div a{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: rgb(255, 255, 255);
+font-size: 13px;
+}
+.social-icon div.home{
+background: #5d9dfc;
+}
+.social-icon div.research{
+background: #d4d41f;
+}
